@@ -8,7 +8,7 @@ El objetivo del proyecto es consolidar diferentes conceptos aprendidos durante e
 
 # 📑 Índice
 
-- [Descripción](#-Características-principales)
+- [Descripción](#-Descripción)
 - [Características principales](#-características-principales)
 - [Pantallas de la aplicación](#-pantallas-de-la-aplicación)
 - [Arquitectura y clases principales](#-arquitectura-y-clases-principales)

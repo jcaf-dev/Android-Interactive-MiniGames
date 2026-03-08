@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Quizz</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_NombreUsuario">Nombre de Usuario</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="BotonDeFuentes">"?"</string>
+
+    <string name="Agatha">1</string>
+    <string name="Athenic">2</string>
+    <string name="clasico">3</string>
+
+    <string name="textFuente1">Fuente Agatha</string>
+    <string name="textFuente2">Fuente Athenic</string>
+    <string name="textFuente3">Clasico</string>
+
+
+    <string name="Color_uno">Rojo</string>
+    <string name="Color_dos">Azul</string>
+    <string name="Color_tres">Básico</string>
+
+    <string name="textoDeColor">Elige el color</string>
+    <string name="textoDeFuente">Elige la fuente</string>
+    <string name="Guardar">Guardar</string>
+
+
+    <string name="NumeroQ">Numero de la pregunta</string>
+    <string name="txt_numero">Numero de la pregunta</string>
+    <string name="txt_opcion1">Grupo</string>
+    <string name="txt_opcion2">Opcion Correcta</string>
+    <string name="txt_opcion3">Opcion Dos</string>
+    <string name="txt_opcion4">Opcion Tres</string>
+    <string name="txt_opcion5">Opcion Cuatro</string>
+    <string name="boton_buscar">Buscar</string>
+
+    <string name="bbdd">BBDD</string>
+    <string name="sonido"></string>
+    //----- Tienda ----//
+    <string name="shop">Tienda</string>
+
+    <string name="boton1">1,5 €</string>
+    <string name="boton2">2,5 €</string>
+    <string name="boton3">3,5 €</string>
+
+    //---Game 2-----//
+
+    <string name="color_uno">Alemania</string>
+    <string name="color_dos">España</string>
+    <string name="color_tres">Reino Unido</string>
+    <string name="color_cuatro">Japón</string>
+
+    <string name="text">Une el nombre con la bandera</string>
+
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#424242"
+    tools:context=".Fotos">
+
+    <Button
+        android:id="@+id/boton_sonido"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:onClick="Boton_de_sonido"
+        android:text="@string/sonido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978" />
+
+    <TextView
+        android:id="@+id/contadorTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:text="¿Cuál es el primer álbum de NOFX?"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/preguntasTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Pregunta 5"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="345dp"
+        android:layout_height="355dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="128dp">
+
+            <ImageButton
+
+                android:id="@+id/imageButton8"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@android:color/background_light"
+                android:onClick="seleccionaA"
+                android:scaleType="centerInside"
+                android:src="@drawable/p2"
+                tools:src="@drawable/p2"
+                tools:srcCompat="@drawable/p2" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@android:color/background_light"
+                android:onClick="seleccionaB"
+                android:scaleType="centerInside"
+                android:src="@drawable/p3"
+                tools:src="@drawable/p3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="332dp"
+            android:layout_height="126dp">
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@android:color/background_light"
+                android:onClick="seleccionaC"
+                android:scaleType="centerInside"
+                android:src="@drawable/pa"
+                tools:srcCompat="@drawable/pa" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@android:color/background_light"
+                android:onClick="seleccionaD"
+                android:scaleType="centerInside"
+                android:src="@drawable/p1"
+                tools:srcCompat="@drawable/p1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/seleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Seleccionado: "
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785" />
+
+    <Switch
+        android:id="@+id/Switchseleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="seleccion"
+        android:text="Seleccion"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showpop"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+</androidx.constraintlayout.widget.ConstraintLayout>

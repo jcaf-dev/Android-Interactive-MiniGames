@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Layout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BotonModificador"
+    tools:layout_editor_absoluteX="-5dp"
+    tools:layout_editor_absoluteY="50dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="46dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216">
+
+        <RadioButton
+            android:id="@+id/botonFuente_uno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="actualizarFuente"
+            android:text="@string/Agatha" />
+
+        <RadioButton
+            android:id="@+id/botonFuente_dos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="actualizarFuente"
+            android:text="@string/Athenic" />
+
+        <RadioButton
+            android:id="@+id/botonFuente_tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="actualizarFuente"
+            android:text="@string/clasico" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textFuente3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textFuente3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFuente2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textFuente1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="@string/textFuente1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apendice1"
+        android:layout_width="85dp"
+        android:layout_height="23dp"
+        android:text="@string/textoDeColor"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <TextView
+        android:id="@+id/textFuente2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/textFuente2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFuente1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="97dp"
+        android:layout_height="23dp"
+        android:text="@string/textoDeFuente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <Button
+        android:id="@+id/BotonGuardar"
+        android:layout_width="152dp"
+        android:layout_height="73dp"
+        android:onClick="Guardar"
+        android:text="@string/Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="331dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Personalizacion"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/Rojo"
+        android:layout_width="78dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:background="@android:color/white"
+        android:onClick="Blanco"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/rojo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rojo"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/rojo"
+        android:layout_width="78dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="Rojo"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/rojo2"
+        app:layout_constraintStart_toEndOf="@+id/Rojo"
+        app:layout_constraintTop_toTopOf="@+id/rojo2"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/rojo2"
+        android:layout_width="78dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="60dp"
+        android:background="@android:color/holo_blue_bright"
+        android:onClick="Negro"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/rojo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="9dp"
+        android:text="@string/Color_tres"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/Rojo"
+        app:layout_constraintTop_toBottomOf="@+id/Rojo"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/Color_uno"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rojo"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Color_dos"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/rojo2"
+        app:layout_constraintTop_toBottomOf="@+id/rojo2" />
+
+    <Button
+        android:id="@+id/Boton_sonido"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:onClick="Boton_de_sonido"
+        android:text="@string/sonido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.653" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
